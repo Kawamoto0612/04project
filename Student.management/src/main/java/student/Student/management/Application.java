@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class Application {
 
-	private Map<String, String> studentData = new HashMap<>();
+	private final Map<String, String> studentData = new HashMap<>();
 
 	public static void main(String[] args) {
 			SpringApplication.run(Application.class, args);
